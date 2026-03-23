@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Asim Ali — The Telegraph</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+font-family: Georgia, serif;
+max-width: 820px;
+margin: 60px auto;
+line-height: 1.7;
+color:#111;
+}
+
+.header{
+margin-bottom:60px;
+}
+
+.header h1{
+font-size:40px;
+margin-bottom:5px;
+}
+
+.nav a{
+margin-right:18px;
+text-decoration:none;
+color:#111;
+font-size:15px;
+}
+
+.archive h2{
+font-size:28px;
+margin-bottom:30px;
+border-bottom:1px solid #ddd;
+padding-bottom:8px;
+}
+
+.article{
+margin-bottom:28px;
+}
+
+.title{
+font-size:20px;
+font-weight:600;
+}
+
+.sub{
+color:#555;
+font-size:16px;
+}
+
+.date{
+color:#888;
+font-size:14px;
+}
+
+a{
+text-decoration:none;
+color:#000;
+}
+
+a:hover{
+text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h1>Asim Ali</h1>
+
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="telegraph.html">Telegraph</a>
+<a href="hindu.html">The Hindu</a>
+<a href="toi.html">Times of India</a>
+</div>
+
+</div>
+
+<div class="archive">
+<h2>The Telegraph</h2>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/a-depleted-force-the-erosion-of-the-public-in-the-expressions-of-the-sovereign-prnt/cid/2143042">
+A depleted force
+</a>
+<div class="sub">The erosion of the public in the expressions of the sovereign</div>
+<div class="date">17 January 2026</div>
+</div>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/deformed-modernity-indias-tryst-with-the-modern-is-in-a-shambles-prnt/cid/2138735">
+Deformed modernity
+</a>
+<div class="sub">India’s tryst with the modern is in a shambles</div>
+<div class="date">20 December 2025</div>
+</div>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/paradigm-matters-the-bihar-election-offers-templates-to-the-tmc-and-the-bjp-prnt/cid/2134153">
+Paradigm matters
+</a>
+<div class="sub">The Bihar election offers templates to the TMC and the BJP</div>
+<div class="date">22 November 2025</div>
+</div>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/a-familiar-template-bihars-politics-resembles-a-managed-form-of-democracy-prnt/cid/2129441">
+A familiar template
+</a>
+<div class="sub">Bihar’s politics resembles a managed form of democracy</div>
+<div class="date">25 October 2025</div>
+</div>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/against-inclusion-the-sir-in-bihar-is-indias-jim-crow-moment-prnt/cid/2120230">
+Against inclusion
+</a>
+<div class="sub">The SIR in Bihar is India’s Jim Crow moment</div>
+<div class="date">29 August 2025</div>
+</div>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/dispersed-force-identity-politics-has-displaced-workers-rights-under-modi-prnt/cid/2113957">
+Dispersed force
+</a>
+<div class="sub">Identity politics has displaced workers’ rights</div>
+<div class="date">19 July 2025</div>
+</div>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/sunset-hour-democracys-defendants-are-equally-complicit-in-its-weakening-prnt/cid/2108941">
+Sunset hour
+</a>
+<div class="sub">Democracy’s defendants are equally complicit in its weakening</div>
+<div class="date">21 June 2025</div>
+</div>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/old-shadows-narendra-modis-gamble-with-the-caste-census-prnt/cid/2101434">
+Old shadows
+</a>
+<div class="sub">Narendra Modi’s gamble with the caste census</div>
+<div class="date">24 May 2025</div>
+</div>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/body-double-the-communalisation-of-the-pahalgam-horror-prnt/cid/2096060">
+Body double
+</a>
+<div class="sub">The communalisation of the Pahalgam horror</div>
+<div class="date">26 April 2025</div>
+</div>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/creative-destruction-the-mess-that-is-indias-political-economy-of-finance-prnt/cid/2086321">
+Creative destruction
+</a>
+<div class="sub">The mess that is India’s political economy of finance</div>
+<div class="date">1 March 2025</div>
+</div>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/different-visions-constitutional-state-versus-civilisational-state/cid/2078164">
+Different visions
+</a>
+<div class="sub">Constitutional state versus civilisational state</div>
+<div class="date">18 January 2025</div>
+</div>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/electoral-kingship-ram-temple-inauguration-marks-a-turning-point-of-historical-importance/cid/1994988">
+Electoral kingship
+</a>
+<div class="sub">Ram Temple inauguration marks a turning point</div>
+<div class="date">20 January 2024</div>
+</div>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/baser-instinct-misogyny-meets-communalism-in-animal/cid/1988791">
+Baser instinct
+</a>
+<div class="sub">Misogyny meets communalism in Animal</div>
+<div class="date">23 December 2023</div>
+</div>
+
+
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/mutating-virus-what-makes-love-jihad-effective-is-its-slippery-form/cid/1911192">
+Mutating virus
+</a>
+<div class="sub">What makes love jihad effective is its slippery form</div>
+<div class="date">21 January 2023</div>
+</div>
+
+
+</div>
+
+</body>
+</html>
