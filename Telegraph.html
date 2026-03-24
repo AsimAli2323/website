@@ -1,8 +1,20 @@
+Here is the corrected and complete code for `telegraph.html`.
+
+I have made the following changes:
+1.  **Combined the lists:** Merged the two separate chunks of code you provided into one file.
+2.  **Reverse Chronological Order:** Sorted all articles from newest to oldest.
+3.  **Grouped by Year:** Added year headers (`<div class="year">...</div>`) to match the style of your Hindu page.
+4.  **Added Year Styling:** Added the `.year` CSS class to the style block so the year headers look correct.
+5.  **Fixed HTML Structure:** Removed the duplicate closing tags that were in the middle of your text.
+
+You can copy and paste this entire block into your `telegraph.html` file on GitHub.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Asim Ali — The Telegraph</title>
+<title>Asim Ali — Telegraph Archive</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -14,27 +26,34 @@ line-height: 1.7;
 color:#111;
 }
 
-.header{
-margin-bottom:60px;
-}
-
-.header h1{
-font-size:40px;
+h1{
+font-size:42px;
 margin-bottom:5px;
 }
 
+.nav{
+margin-bottom:40px;
+}
+
 .nav a{
-margin-right:18px;
+margin-right:22px;
 text-decoration:none;
 color:#111;
 font-size:15px;
 }
 
-.archive h2{
-font-size:28px;
-margin-bottom:30px;
+h2{
 border-bottom:1px solid #ddd;
-padding-bottom:8px;
+padding-bottom:10px;
+margin-bottom:30px;
+}
+
+/* Added Year Styling */
+.year {
+font-size: 24px;
+margin-top: 45px;
+margin-bottom: 18px;
+color: #444;
 }
 
 .article{
@@ -48,7 +67,6 @@ font-weight:600;
 
 .sub{
 color:#555;
-font-size:16px;
 }
 
 .date{
@@ -57,8 +75,8 @@ font-size:14px;
 }
 
 a{
+color:black;
 text-decoration:none;
-color:#000;
 }
 
 a:hover{
@@ -69,149 +87,306 @@ text-decoration:underline;
 
 <body>
 
-<div class="header">
 <h1>Asim Ali</h1>
 
 <div class="nav">
 <a href="index.html">Home</a>
+<a href="selected.html">Selected Essays</a>
 <a href="telegraph.html">Telegraph</a>
 <a href="hindu.html">The Hindu</a>
 <a href="toi.html">Times of India</a>
+<a href="academic.html">Academic Work</a>
+<a href="bio.html">Bio & Contact</a>
 </div>
 
-</div>
+<h2>The Telegraph — Complete Archive</h2>
 
-<div class="archive">
-<h2>The Telegraph</h2>
-
-
+<!-- 2026 -->
+<div class="year">2026</div>
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/a-depleted-force-the-erosion-of-the-public-in-the-expressions-of-the-sovereign-prnt/cid/2143042">
-A depleted force
-</a>
+<a class="title" href="https://www.telegraphindia.com/opinion/a-depleted-force-the-erosion-of-the-public-in-the-expressions-of-the-sovereign-prnt/cid/2143042">A depleted force</a>
 <div class="sub">The erosion of the public in the expressions of the sovereign</div>
 <div class="date">17 January 2026</div>
 </div>
 
-
+<!-- 2025 -->
+<div class="year">2025</div>
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/deformed-modernity-indias-tryst-with-the-modern-is-in-a-shambles-prnt/cid/2138735">
-Deformed modernity
-</a>
+<a class="title" href="https://www.telegraphindia.com/opinion/deformed-modernity-indias-tryst-with-the-modern-is-in-a-shambles-prnt/cid/2138735">Deformed modernity</a>
 <div class="sub">India’s tryst with the modern is in a shambles</div>
 <div class="date">20 December 2025</div>
 </div>
-
-
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/paradigm-matters-the-bihar-election-offers-templates-to-the-tmc-and-the-bjp-prnt/cid/2134153">
-Paradigm matters
-</a>
+<a class="title" href="https://www.telegraphindia.com/opinion/paradigm-matters-the-bihar-election-offers-templates-to-the-tmc-and-the-bjp-prnt/cid/2134153">Paradigm matters</a>
 <div class="sub">The Bihar election offers templates to the TMC and the BJP</div>
 <div class="date">22 November 2025</div>
 </div>
-
-
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/a-familiar-template-bihars-politics-resembles-a-managed-form-of-democracy-prnt/cid/2129441">
-A familiar template
-</a>
+<a class="title" href="https://www.telegraphindia.com/opinion/a-familiar-template-bihars-politics-resembles-a-managed-form-of-democracy-prnt/cid/2129441">A familiar template</a>
 <div class="sub">Bihar’s politics resembles a managed form of democracy</div>
 <div class="date">25 October 2025</div>
 </div>
-
-
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/against-inclusion-the-sir-in-bihar-is-indias-jim-crow-moment-prnt/cid/2120230">
-Against inclusion
-</a>
+<a class="title" href="https://www.telegraphindia.com/opinion/against-inclusion-the-sir-in-bihar-is-indias-jim-crow-moment-prnt/cid/2120230">Against inclusion</a>
 <div class="sub">The SIR in Bihar is India’s Jim Crow moment</div>
 <div class="date">29 August 2025</div>
 </div>
-
-
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/dispersed-force-identity-politics-has-displaced-workers-rights-under-modi-prnt/cid/2113957">
-Dispersed force
-</a>
-<div class="sub">Identity politics has displaced workers’ rights</div>
+<a class="title" href="https://www.telegraphindia.com/opinion/dispersed-force-identity-politics-has-displaced-workers-rights-under-modi-prnt/cid/2113957">Dispersed force</a>
+<div class="sub">Identity politics has displaced workers’ rights under Modi</div>
 <div class="date">19 July 2025</div>
 </div>
-
-
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/sunset-hour-democracys-defendants-are-equally-complicit-in-its-weakening-prnt/cid/2108941">
-Sunset hour
-</a>
+<a class="title" href="https://www.telegraphindia.com/opinion/sunset-hour-democracys-defendants-are-equally-complicit-in-its-weakening-prnt/cid/2108941">Sunset hour</a>
 <div class="sub">Democracy’s defendants are equally complicit in its weakening</div>
 <div class="date">21 June 2025</div>
 </div>
-
-
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/old-shadows-narendra-modis-gamble-with-the-caste-census-prnt/cid/2101434">
-Old shadows
-</a>
+<a class="title" href="https://www.telegraphindia.com/opinion/old-shadows-narendra-modis-gamble-with-the-caste-census-prnt/cid/2101434">Old shadows</a>
 <div class="sub">Narendra Modi’s gamble with the caste census</div>
 <div class="date">24 May 2025</div>
 </div>
-
-
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/body-double-the-communalisation-of-the-pahalgam-horror-prnt/cid/2096060">
-Body double
-</a>
+<a class="title" href="https://www.telegraphindia.com/opinion/body-double-the-communalisation-of-the-pahalgam-horror-prnt/cid/2096060">Body double</a>
 <div class="sub">The communalisation of the Pahalgam horror</div>
 <div class="date">26 April 2025</div>
 </div>
-
-
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/creative-destruction-the-mess-that-is-indias-political-economy-of-finance-prnt/cid/2086321">
-Creative destruction
-</a>
+<a class="title" href="https://www.telegraphindia.com/opinion/creative-destruction-the-mess-that-is-indias-political-economy-of-finance-prnt/cid/2086321">Creative destruction</a>
 <div class="sub">The mess that is India’s political economy of finance</div>
 <div class="date">1 March 2025</div>
 </div>
-
-
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/different-visions-constitutional-state-versus-civilisational-state/cid/2078164">
-Different visions
-</a>
-<div class="sub">Constitutional state versus civilisational state</div>
+<a class="title" href="https://www.telegraphindia.com/opinion/different-visions-constitutional-state-versus-civilisational-state/cid/2078164">Different visions</a>
+<div class="sub">Constitutional State versus civilisational State</div>
 <div class="date">18 January 2025</div>
 </div>
 
-
+<!-- 2024 -->
+<div class="year">2024</div>
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/electoral-kingship-ram-temple-inauguration-marks-a-turning-point-of-historical-importance/cid/1994988">
-Electoral kingship
-</a>
+<a class="title" href="https://www.telegraphindia.com/opinion/a-poisoned-state-indias-polity-encourages-the-spectre-of-pollution/cid/2065315">A poisoned State</a>
+<div class="sub">India’s polity encourages the spectre of pollution</div>
+<div class="date">23 November 2024</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/revival-script-south-american-parties-can-hold-up-a-mirror-to-the-congress/cid/2058393">Revival script</a>
+<div class="sub">South American parties can hold up a mirror to the Congress</div>
+<div class="date">26 October 2024</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/specific-syndrome-the-crisis-in-south-asian-democracy-is-structural/cid/2041464">Specific syndrome</a>
+<div class="sub">The crisis in South Asian democracy is structural</div>
+<div class="date">17 August 2024</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/passive-consumption-the-aam-aadmi-and-the-ambani-wedding/cid/2034926">Passive consumption</a>
+<div class="sub">The aam aadmi and the Ambani wedding</div>
+<div class="date">20 July 2024</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/talons-intact-indian-democracy-is-not-free-from-fascism-yet/cid/2028817">Talons intact</a>
+<div class="sub">Indian democracy is not free from fascism yet</div>
+<div class="date">22 June 2024</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/the-two-poles-indian-democracys-future-will-be-decided-in-10-days/cid/2022260">The two poles</a>
+<div class="sub">Indian democracy’s future will be decided in 10 days</div>
+<div class="date">25 May 2024</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/the-scapegoat-scapegoating-is-a-fairly-ancient-and-universal-mechanism-in-human-affairs/cid/2016066">The scapegoat</a>
+<div class="sub">Scapegoating is a fairly ancient and universal mechanism</div>
+<div class="date">27 April 2024</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/fractured-belonging-democratic-citizenship-and-the-spectre-of-class/cid/2007188">Fractured belonging</a>
+<div class="sub">Democratic citizenship and the spectre of class</div>
+<div class="date">16 March 2024</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/loose-ends-why-has-the-india-bloc-lost-its-political-momentum/cid/2001034">Loose ends</a>
+<div class="sub">Why has the INDIA bloc lost its political momentum</div>
+<div class="date">17 February 2024</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/electoral-kingship-ram-temple-inauguration-marks-a-turning-point-of-historical-importance/cid/1994988">Electoral kingship</a>
 <div class="sub">Ram Temple inauguration marks a turning point</div>
 <div class="date">20 January 2024</div>
 </div>
 
-
+<!-- 2023 -->
+<div class="year">2023</div>
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/baser-instinct-misogyny-meets-communalism-in-animal/cid/1988791">
-Baser instinct
-</a>
+<a class="title" href="https://www.telegraphindia.com/opinion/baser-instinct-misogyny-meets-communalism-in-animal/cid/1988791">Baser instinct</a>
 <div class="sub">Misogyny meets communalism in Animal</div>
 <div class="date">23 December 2023</div>
 </div>
-
-
 <div class="article">
-<a class="title" href="https://www.telegraphindia.com/opinion/mutating-virus-what-makes-love-jihad-effective-is-its-slippery-form/cid/1911192">
-Mutating virus
-</a>
+<a class="title" href="https://www.telegraphindia.com/opinion/going-dutch-hindutvas-symbiotic-bond-with-europes-far-right/cid/1982434">Going Dutch</a>
+<div class="sub">Hindutva’s symbiotic bond with Europe’s far-Right</div>
+<div class="date">25 November 2023</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/a-crooked-lens-what-binds-v-d-savarkar-to-henry-kissinger/cid/1975870">A crooked lens</a>
+<div class="sub">What binds V.D. Savarkar to Henry Kissinger</div>
+<div class="date">28 October 2023</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/decoding-an-evil-communial-violence-is-often-misrecognised-in-india/cid/1959960">Decoding an evil</a>
+<div class="sub">Communal violence is often misrecognised in India</div>
+<div class="date">19 August 2023</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/for-a-new-formula-progressive-democratisation-and-the-future-of-the-republic/cid/1953688">For a new formula</a>
+<div class="sub">Progressive democratisation and the future of the republic</div>
+<div class="date">22 July 2023</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/the-patna-plan-two-kinds-of-populism-will-shape-the-next-general-elections/cid/1947285">The Patna plan</a>
+<div class="sub">Two kinds of populism will shape the next elections</div>
+<div class="date">24 June 2023</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/the-subaltern-speaks-lohiate-politics-could-resurrect-indias-opposition/cid/1940019">The subaltern speaks</a>
+<div class="sub">Lohiate politics could resurrect India’s opposition</div>
+<div class="date">27 May 2023</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/blood-on-the-street-the-roots-of-orchestrated-violence-in-uttar-pradesh/cid/1933161">Blood on the street</a>
+<div class="sub">The roots of orchestrated violence in Uttar Pradesh</div>
+<div class="date">29 April 2023</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/the-new-sovereign-yogi-adityanath-leads-the-race-for-narendra-modis-successor/cid/1923290">The new sovereign</a>
+<div class="sub">Yogi Adityanath leads the race for Narendra Modi’s successor</div>
+<div class="date">18 March 2023</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/a-bit-too-tall-the-dangerous-centralisation-of-political-power-in-india/cid/1917289">A bit too tall</a>
+<div class="sub">The dangerous centralisation of political power in India</div>
+<div class="date">18 February 2023</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/mutating-virus-what-makes-love-jihad-effective-is-its-slippery-form/cid/1911192">Mutating virus</a>
 <div class="sub">What makes love jihad effective is its slippery form</div>
 <div class="date">21 January 2023</div>
 </div>
 
+<!-- 2022 -->
+<div class="year">2022</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/a-special-collective-glimpses-of-a-counter-establishment-sphere/cid/1905586">A special collective</a>
+<div class="sub">Glimpses of a counter-establishment sphere</div>
+<div class="date">24 December 2022</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/a-different-ball-game-football-as-soft-power-in-the-middle-east/cid/1900313">A different ball game</a>
+<div class="sub">Football as soft power in the Middle East</div>
+<div class="date">26 November 2022</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/imprisoned-minds-the-failure-of-indian-schools-to-promote-liberalism/cid/1894844">Imprisoned minds</a>
+<div class="sub">The failure of Indian schools to promote liberalism</div>
+<div class="date">29 October 2022</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/marching-for-a-cause-criticism-of-the-bharat-jodo-yatra-has-mostly-been-unfair/cid/1887137">Marching for a cause</a>
+<div class="sub">Criticism of the Bharat Jodo Yatra has mostly been unfair</div>
+<div class="date">17 September 2022</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/troubling-eclipse-what-does-the-waning-of-brand-aamir-khan-say-about-india/cid/1881225">Troubling eclipse</a>
+<div class="sub">What does the waning of Brand Aamir Khan say about India</div>
+<div class="date">20 August 2022</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/supremacy-project-demystifying-anti-muslim-mobilisation/cid/1876055">Supremacy project</a>
+<div class="sub">Demystifying anti-Muslim mobilisation</div>
+<div class="date">23 July 2022</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/grim-future-a-new-compact-between-the-bjp-and-muslims-is-implausible/cid/1860915">Grim future</a>
+<div class="sub">A new compact between the BJP and Muslims is implausible</div>
+<div class="date">17 April 2022</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/durable-formula-mandal-politics-must-be-revamped-not-renounced/cid/1856580">Durable formula</a>
+<div class="sub">Mandal politics must be revamped, not renounced</div>
+<div class="date">19 March 2022</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/new-choice-the-muslim-vote-in-the-uttar-pradesh-elections/cid/1852497">New choice</a>
+<div class="sub">The Muslim vote in the Uttar Pradesh elections</div>
+<div class="date">19 February 2022</div>
+</div>
 
+<!-- 2021 -->
+<div class="year">2021</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/uttar-pradesh-assembly-elections-2022-the-bjps-campaign-may-be-floundering/cid/1845366">Golden oldies</a>
+<div class="sub">The BJP’s campaign may be floundering</div>
+<div class="date">30 December 2021</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/the-story-of-new-india-is-not-being-written-by-narendra-modi-alone/cid/1834691">Collective surrender</a>
+<div class="sub">The story of New India is not being written by Narendra Modi alone</div>
+<div class="date">16 October 2021</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/asaduddin-owaisi-and-the-bharatiya-janata-party/cid/1831125">Asaduddin Owaisi and the Bharatiya Janata Party</a>
+<div class="sub">Identity politics and electoral strategy</div>
+<div class="date">18 September 2021</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/the-bjp-now-finds-itself-on-a-slippery-ideological-surface/cid/1827349">A slippery ideological surface</a>
+<div class="sub">The BJP’s ideological dilemmas</div>
+<div class="date">21 August 2021</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/will-the-pegasus-controversy-give-the-opposition-some-horsepower/cid/1823659">Pegasus controversy</a>
+<div class="sub">Will surveillance politics reshape opposition strategy</div>
+<div class="date">24 July 2021</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/regional-pride-could-be-a-strategy-against-the-bjp/cid/1812764">Regional pride</a>
+<div class="sub">Could regionalism counter BJP dominance</div>
+<div class="date">17 April 2021</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/the-farmers-protest-is-a-political-opportunity-for-the-opposition/cid/1807229">Farmers’ protest opportunity</a>
+<div class="sub">Opposition strategy in mass movements</div>
+<div class="date">20 February 2021</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/six-steps-to-build-an-anti-islamophobic-movement/cid/1804506">Anti-Islamophobic movement</a>
+<div class="sub">Six steps to build political resistance</div>
+<div class="date">23 January 2021</div>
+</div>
+
+<!-- 2020 -->
+<div class="year">2020</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/the-farmers-protests-are-unlikely-to-dent-the-bjps-appeal/cid/1801678">Farmers’ protests unlikely to dent BJP</a>
+<div class="sub">Limits of agitation politics</div>
+<div class="date">26 December 2020</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/joe-bidens-global-democracy-promotion-should-not-overlook-india/cid/1798817">Freedom fighter</a>
+<div class="sub">Joe Biden’s democracy promotion should not overlook India</div>
+<div class="date">28 November 2020</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/narendra-modi-political-graph-mirrors-that-of-lalu-prasad/cid/1794936">Shared trajectory</a>
+<div class="sub">Narendra Modi’s political graph mirrors Lalu Prasad</div>
+<div class="date">17 October 2020</div>
+</div>
+<div class="article">
+<a class="title" href="https://www.telegraphindia.com/opinion/the-indian-middle-class-media-and-hysteria/cid/1792398">Middle class and hysteria</a>
+<div class="sub">Media spectacle and political anxiety</div>
+<div class="date">19 September 2020</div>
 </div>
 
 </body>
 </html>
+```
