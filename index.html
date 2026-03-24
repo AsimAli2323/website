@@ -1,70 +1,186 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Asim Ali</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Font: Montserrat (Used on Anne Applebaum's site) -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-body{font-family:Georgia,serif;max-width:900px;margin:40px auto;line-height:1.6;color:#111}
-.site-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px}
-.nav-links{list-style:none;display:flex;gap:18px;padding:0}
-.nav-links a{text-decoration:none;color:#111}
-.hero h1{font-size:42px;margin-bottom:5px}
-.tagline{font-size:18px;color:#444}
-.section{margin-top:50px}
-h2{border-bottom:1px solid #ddd;padding-bottom:6px}
-.essay-list{list-style:none;padding:0}
-.essay-list li{margin-bottom:12px}
+    /* General Body & Layout */
+    body {
+        font-family: 'Montserrat', sans-serif;
+        max-width: 900px;
+        margin: 0 auto;
+        line-height: 1.7;
+        color: #3a3a3a; /* Dark Grey from Anne Applebaum site */
+        background-color: #FBF9F5; /* Slight warm paper-like off-white */
+        font-size: 16px;
+    }
+
+    /* Header Styling - Centered Layout */
+    .site-header {
+        text-align: center;
+        padding: 40px 20px 30px 20px;
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 40px;
+        background-color: #FFFFFF; /* White header block */
+    }
+
+    .site-title {
+        margin: 0 0 15px 0;
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .site-title a {
+        text-decoration: none;
+        color: #3a3a3a; /* Title Color */
+    }
+
+    /* Tagline moved to header to match the bio/intro style */
+    .site-tagline {
+        font-size: 14px;
+        color: #666;
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-weight: 400;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Navigation Styling */
+    .nav-links {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* Centered nav links */
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #c6a58b; /* Muted Gold/Tan color from Anne Applebaum site */
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: none;
+        transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+        color: #3a3a3a; /* Dark Grey hover */
+    }
+
+    /* Content Sections */
+    .section {
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #3a3a3a;
+        border-bottom: 2px solid #c6a58b; /* Gold accent underline */
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        margin-bottom: 1.5em;
+    }
+
+    /* Essay List Styling */
+    .essay-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .essay-list li {
+        margin-bottom: 15px;
+        line-height: 1.5;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    .essay-list li:last-child {
+        border-bottom: none;
+    }
+
+    .essay-list a {
+        color: #3a3a3a;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .essay-list a:hover {
+        color: #c6a58b; /* Accent color on hover */
+    }
+
+    /* Responsive Tweaks */
+    @media (max-width: 600px) {
+        .nav-links {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .site-title {
+            font-size: 1.8rem;
+        }
+    }
 </style>
 </head>
 
 <body>
 
 <header class="site-header">
-<!-- Logo "ASIM ALI" removed from here as requested -->
-<nav>
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="Selected.html">Selected Essays</a></li>
-<li><a href="Telegraph.html">Telegraph</a></li>
-<li><a href="hindu.html">The Hindu</a></li>
-<li><a href="toi.html">Times of India</a></li>
-<li><a href="#academic">Academic Work</a></li>
-<!-- Bio & Contact removed from navigation as requested -->
-</ul>
-</nav>
+    <div class="site-title"><a href="index.html">Asim Ali</a></div>
+    <p class="site-tagline">Political researcher and columnist writing on democracy, nationalism, political economy and popular culture in South Asia.</p>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Selected.html">Selected Essays</a></li>
+            <li><a href="Telegraph.html">Telegraph</a></li>
+            <li><a href="hindu.html">The Hindu</a></li>
+            <li><a href="toi.html">Times of India</a></li>
+            <li><a href="#academic">Academic Work</a></li>
+        </ul>
+    </nav>
 </header>
 
-<section class="hero">
-<h1>Asim Ali</h1>
-<p class="tagline">Political researcher and columnist writing on democracy, nationalism, political economy and popular culture in South Asia.</p>
-</section>
-
 <section class="section">
-<p>I write on democratic transformation, party politics, caste mobilisation, majoritarian nationalism and cultural politics in contemporary India. My essays have appeared in The New York Times, The Guardian, The Diplomat, Frontline, The Telegraph, The Hindu and The Times of India.</p>
+    <p>I write on democratic transformation, party politics, caste mobilisation, majoritarian nationalism and cultural politics in contemporary India. My essays have appeared in The New York Times, The Guardian, The Diplomat, Frontline, The Telegraph, The Hindu and The Times of India.</p>
 </section>
 
 <section id="selected" class="section">
-<h2>Selected Essays</h2>
-<ul class="essay-list">
-<li><a href="https://www.nytimes.com/2020/02/12/opinion/delhi-election-modi.html">Modi Lost in Delhi. It Doesn’t Matter.</a> — Feb 2020, NYT</li>
-<li><a href="https://thediplomat.com/2021/03/the-making-of-brand-modi/">The Making of Brand Modi</a> — Apr 2021, The Diplomat</li>
-<li><a href="https://www.theguardian.com/commentisfree/2023/jun/01/bollywood-hit-kerala-story-islamophobic-bjp">Ignore lofty claims about The Kerala Story</a> — Jun 2023, The Guardian</li>
-<li><a href="https://frontline.thehindu.com/politics/the-opposition-must-adopt-a-subaltern-strategy-to-defeat-the-nda-hegemony/article67949690.ece">Power to the people</a> — Mar 2024, Frontline</li>
-<li><a href="https://thediplomat.com/2025/05/democracy-disfigured-indias-political-devolution/">Democracy Disfigured</a> — Jun 2025, The Diplomat</li>
-<li><a href="https://frontline.thehindu.com/politics/rss-hindu-nationalism-muslim-outreach-assimilation-myth/article70041752.ece">No Muslim, No Hindutva</a> — Sept 2025, Frontline</li>
-</ul>
+    <h2>Selected Essays</h2>
+    <ul class="essay-list">
+        <li><a href="https://www.nytimes.com/2020/02/12/opinion/delhi-election-modi.html">Modi Lost in Delhi. It Doesn’t Matter.</a> — Feb 2020, NYT</li>
+        <li><a href="https://thediplomat.com/2021/03/the-making-of-brand-modi/">The Making of Brand Modi</a> — Apr 2021, The Diplomat</li>
+        <li><a href="https://www.theguardian.com/commentisfree/2023/jun/01/bollywood-hit-kerala-story-islamophobic-bjp">Ignore lofty claims about The Kerala Story</a> — Jun 2023, The Guardian</li>
+        <li><a href="https://frontline.thehindu.com/politics/the-opposition-must-adopt-a-subaltern-strategy-to-defeat-the-nda-hegemony/article67949690.ece">Power to the people</a> — Mar 2024, Frontline</li>
+        <li><a href="https://thediplomat.com/2025/05/democracy-disfigured-indias-political-devolution/">Democracy Disfigured</a> — Jun 2025, The Diplomat</li>
+        <li><a href="https://frontline.thehindu.com/politics/rss-hindu-nationalism-muslim-outreach-assimilation-myth/article70041752.ece">No Muslim, No Hindutva</a> — Sept 2025, Frontline</li>
+    </ul>
 </section>
 
-<!-- Removed Telegraph, Hindu, Times of India, and Academic Work sections -->
-
 <section id="about" class="section">
-<h2>Bio & Contact</h2>
-<p>Asim Ali is a political researcher and columnist focusing on democracy, caste politics, nationalism and political economy.</p>
-<p>Email: Syasimal@gmail.com</p>
+    <h2>Bio & Contact</h2>
+    <p>Asim Ali is a political researcher and columnist focusing on democracy, caste politics, nationalism and political economy.</p>
+    <p>Email: <a href="mailto:Syasimal@gmail.com">Syasimal@gmail.com</a></p>
 </section>
 
 </body>
 </html>
-
 ```
