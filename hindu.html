@@ -1,166 +1,264 @@
+Here is the updated code for "The Hindu" archive page. I have applied the exact same Montserrat typography, gold/charcoal color scheme, and centered header layout to ensure perfect consistency with the redesigned index page.
 
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Asim Ali — The Hindu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        /* General Body & Layout */
         body {
-            font-family: Georgia, serif;
-            max-width: 880px;
-            margin: 60px auto;
-            line-height: 1.75;
-            color: #111;
+            font-family: 'Montserrat', sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.7;
+            color: #3a3a3a;
+            background-color: #FBF9F5;
+            font-size: 16px;
         }
 
-        .header {
-            margin-bottom: 60px;
-        }
-
-        .header h1 {
-            font-size: 42px;
-            margin-bottom: 8px;
-        }
-
-        .nav a {
-            margin-right: 20px;
-            text-decoration: none;
-            color: #111;
-            font-size: 15px;
-        }
-
-        .nav a:hover {
-            text-decoration: underline;
-        }
-
-        .archive h2 {
-            font-size: 32px;
+        /* Header Styling - Centered Layout (Consistent with Index) */
+        .site-header {
+            text-align: center;
+            padding: 40px 20px 30px 20px;
+            border-bottom: 1px solid #e6e6e6;
             margin-bottom: 40px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 12px;
+            background-color: #FFFFFF;
         }
 
+        .site-title {
+            margin: 0 0 15px 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .site-title a {
+            text-decoration: none;
+            color: #3a3a3a;
+        }
+
+        .site-tagline {
+            font-size: 14px;
+            color: #666;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: 400;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Navigation Styling */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #c6a58b;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3a3a3a;
+        }
+
+        /* Content Sections */
+        .archive {
+            padding: 0 20px;
+        }
+
+        /* Main Page Title (e.g., "The Hindu") */
+        .archive h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #3a3a3a;
+            border-bottom: 2px solid #c6a58b;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 25px;
+        }
+
+        /* Year Headers */
         .year {
-            font-size: 24px;
+            font-size: 18px;
+            font-weight: 600;
             margin-top: 45px;
             margin-bottom: 18px;
-            color: #444;
+            color: #3a3a3a;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 8px;
         }
 
+        /* Article List Styling */
         .article {
             margin-bottom: 16px;
+            line-height: 1.5;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .article:last-child {
+            border-bottom: none;
         }
 
         .article a {
             text-decoration: none;
-            color: #000;
-            font-size: 19px;
+            color: #3a3a3a;
+            font-weight: 500;
+            font-size: 17px;
         }
 
         .article a:hover {
-            text-decoration: underline;
+            color: #c6a58b;
         }
 
         .date {
             color: #888;
-            font-size: 14px;
+            font-size: 13px;
+            margin-top: 4px;
+            display: block;
+        }
+        
+        /* Responsive Tweaks */
+        @media (max-width: 600px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .site-title {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <h1>Asim Ali</h1>
-        <div class="nav"><a href="index.html">Home</a> <a href="selected.html">Selected Essays</a> <a href="telegraph.html">Telegraph</a> <a href="hindu.html">The Hindu</a> <a href="toi.html">Times of India</a> <a href="academic.html">Academic Work</a> <a href="bio.html">Bio &amp; Contact</a></div>
-    </div>
-    <div class="archive">
-        <h2>The Hindu</h2>
-        <div class="year">2024</div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/op-ed/the-site-of-a-major-political-earthquake/article68252239.ece">The site of a major political earthquake</a>
-            <div class="date">5 June 2024</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/heady-electoral-rhetoric-with-a-hegemonic-ring-to-it/article67917675.ece">Heady electoral rhetoric with a hegemonic ring to it</a>
-            <div class="date">6 March 2024</div>
-        </div>
-        <div class="year">2023</div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/nationally-dominant-with-a-strategy-that-clicks/article67602087.ece">Nationally dominant, with a strategy that clicks</a>
-            <div class="date">4 December 2023</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/how-the-bjp-juggernaut-chugs-along/article67557918.ece">How the BJP juggernaut chugs along</a>
-            <div class="date">22 November 2023</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/opaque-political-financing-could-cost-democracy-dear/article66149909.ece">Opaque political financing could cost democracy dear</a>
-            <div class="date">18 November 2023</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/a-census-for-a-new-deal/article67396514.ece">A census for a new deal</a>
-            <div class="date">9 October 2023</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/the-calculus-behind-political-neutrality/article67177055.ece">The calculus behind political neutrality</a>
-            <div class="date">10 August 2023</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/deciphering-maharashtras-defections-its-politics/article67081157.ece">Deciphering Maharashtra&rsquo;s defections, its politics</a>
-            <div class="date">15 June 2023</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/citizen-activism-that-is-missing-from-the-wrestling-ring/article66931429.ece">Citizen activism that is missing from the wrestling ring</a>
-            <div class="date">5 June 2023</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/op-ed/the-bjps-karnataka-defeat-a-blow-to-its-mythmaking/article66847602.ece">The BJP&rsquo;s Karnataka defeat &mdash; a blow to its mythmaking</a>
-            <div class="date">14 May 2023</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/deciphering-campaign-financing-in-karnataka/article66734342.ece">Deciphering campaign financing in Karnataka</a>
-            <div class="date">14 April 2023</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/a-right-reading-of-post-cleavage-political-parties/article66463841.ece">A right reading of post-cleavage political parties</a>
-            <div class="date">16 March 2023</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/the-unchallenged-run-of-majoritarian-encroachments/article66604691.ece">The unchallenged run of majoritarian encroachments</a>
-            <div class="date">11 March 2023</div>
-        </div>
-        <div class="year">2022</div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/changing-features-of-muslim-representation-in-india/article66318268.ece">Changing features of Muslim representation in India</a>
-            <div class="date">30 December 2022</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/the-big-message-from-the-kurhani-byelection/article66268200.ece">The big message from the Kurhani byelection</a>
-            <div class="date">16 December 2022</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/examining-the-case-for-a-congress-family-reunion/article66027805.ece">Examining the case for a Congress family reunion</a>
-            <div class="date">19 October 2022</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/bihar-and-the-evolution-of-mandal-politics/article65794731.ece">Bihar and the evolution of Mandal politics</a>
-            <div class="date">22 August 2022</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/op-ed/the-marginalisation-of-the-indian-muslim/article65768802.ece">The marginalisation of the Indian Muslim</a>
-            <div class="date">15 August 2022</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/the-meaning-of-a-dynasty-mukt-bharat/article65595666.ece">The meaning of a &lsquo;dynasty-mukt Bharat&rsquo;</a>
-            <div class="date">4 July 2022</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/the-rise-of-aap-and-a-central-question/article65268456.ece">The rise of AAP and a central question</a>
-            <div class="date">29 March 2022</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/op-ed/a-demonstration-of-a-durable-political-phenomenon/article65211924.ece">A demonstration of a durable political phenomenon</a>
-            <div class="date">11 March 2022</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/uttar-pradesh-politics-elections-and-the-welfare-formula/article65045752.ece">In Uttar Pradesh, the crux of welfare politics</a>
-            <div class="date">14 February 2022</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/re-establishing-ownership-of-the-mandal-space/article38179453.ece">Re-establishing ownership of the Mandal space</a>
-            <div class="date">8 January 2022</div>
-        </div>
-        <div class="year">2021</div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/the-tmc-is-playing-t20-aap-a-test-match/article37796431.ece">The Trinamool is playing T20, AAP a Test match</a>
-            <div class="date">2 December 2021</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/in-up-a-missing-tango-and-the-bjps-waltz/article63025309.ece">In U.P., a missing tango and the BJP&rsquo;s waltz</a>
-            <div class="date">10 November 2021</div>
-        </div>
-        <div class="article"><a href="https://www.thehindu.com/opinion/lead/decoding-the-political-battle-for-uttar-pradesh/article35289271.ece">Decoding the political battle for Uttar Pradesh</a>
-            <div class="date">13 July 2021</div>
-        </div>
-    </div>
-</body>
 
+<header class="site-header">
+    <div class="site-title"><a href="index.html">Asim Ali</a></div>
+    <p class="site-tagline">Political researcher and columnist writing on democracy, nationalism, political economy and popular culture in South Asia.</p>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Selected.html">Selected Essays</a></li>
+            <li><a href="Telegraph.html">Telegraph</a></li>
+            <li><a href="hindu.html">The Hindu</a></li>
+            <li><a href="toi.html">Times of India</a></li>
+            <li><a href="#academic">Academic Work</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="archive">
+    <h2>The Hindu</h2>
+    
+    <div class="year">2024</div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/op-ed/the-site-of-a-major-political-earthquake/article68252239.ece">The site of a major political earthquake</a>
+        <span class="date">5 June 2024</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/heady-electoral-rhetoric-with-a-hegemonic-ring-to-it/article67917675.ece">Heady electoral rhetoric with a hegemonic ring to it</a>
+        <span class="date">6 March 2024</span>
+    </div>
+
+    <div class="year">2023</div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/nationally-dominant-with-a-strategy-that-clicks/article67602087.ece">Nationally dominant, with a strategy that clicks</a>
+        <span class="date">4 December 2023</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/how-the-bjp-juggernaut-chugs-along/article67557918.ece">How the BJP juggernaut chugs along</a>
+        <span class="date">22 November 2023</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/opaque-political-financing-could-cost-democracy-dear/article66149909.ece">Opaque political financing could cost democracy dear</a>
+        <span class="date">18 November 2023</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/a-census-for-a-new-deal/article67396514.ece">A census for a new deal</a>
+        <span class="date">9 October 2023</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/the-calculus-behind-political-neutrality/article67177055.ece">The calculus behind political neutrality</a>
+        <span class="date">10 August 2023</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/deciphering-maharashtras-defections-its-politics/article67081157.ece">Deciphering Maharashtra&rsquo;s defections, its politics</a>
+        <span class="date">15 June 2023</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/citizen-activism-that-is-missing-from-the-wrestling-ring/article66931429.ece">Citizen activism that is missing from the wrestling ring</a>
+        <span class="date">5 June 2023</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/op-ed/the-bjps-karnataka-defeat-a-blow-to-its-mythmaking/article66847602.ece">The BJP&rsquo;s Karnataka defeat &mdash; a blow to its mythmaking</a>
+        <span class="date">14 May 2023</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/deciphering-campaign-financing-in-karnataka/article66734342.ece">Deciphering campaign financing in Karnataka</a>
+        <span class="date">14 April 2023</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/a-right-reading-of-post-cleavage-political-parties/article66463841.ece">A right reading of post-cleavage political parties</a>
+        <span class="date">16 March 2023</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/the-unchallenged-run-of-majoritarian-encroachments/article66604691.ece">The unchallenged run of majoritarian encroachments</a>
+        <span class="date">11 March 2023</span>
+    </div>
+
+    <div class="year">2022</div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/changing-features-of-muslim-representation-in-india/article66318268.ece">Changing features of Muslim representation in India</a>
+        <span class="date">30 December 2022</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/the-big-message-from-the-kurhani-byelection/article66268200.ece">The big message from the Kurhani byelection</a>
+        <span class="date">16 December 2022</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/examining-the-case-for-a-congress-family-reunion/article66027805.ece">Examining the case for a Congress family reunion</a>
+        <span class="date">19 October 2022</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/bihar-and-the-evolution-of-mandal-politics/article65794731.ece">Bihar and the evolution of Mandal politics</a>
+        <span class="date">22 August 2022</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/op-ed/the-marginalisation-of-the-indian-muslim/article65768802.ece">The marginalisation of the Indian Muslim</a>
+        <span class="date">15 August 2022</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/the-meaning-of-a-dynasty-mukt-bharat/article65595666.ece">The meaning of a &lsquo;dynasty-mukt Bharat&rsquo;</a>
+        <span class="date">4 July 2022</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/the-rise-of-aap-and-a-central-question/article65268456.ece">The rise of AAP and a central question</a>
+        <span class="date">29 March 2022</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/op-ed/a-demonstration-of-a-durable-political-phenomenon/article65211924.ece">A demonstration of a durable political phenomenon</a>
+        <span class="date">11 March 2022</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/uttar-pradesh-politics-elections-and-the-welfare-formula/article65045752.ece">In Uttar Pradesh, the crux of welfare politics</a>
+        <span class="date">14 February 2022</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/re-establishing-ownership-of-the-mandal-space/article38179453.ece">Re-establishing ownership of the Mandal space</a>
+        <span class="date">8 January 2022</span>
+    </div>
+
+    <div class="year">2021</div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/the-tmc-is-playing-t20-aap-a-test-match/article37796431.ece">The Trinamool is playing T20, AAP a Test match</a>
+        <span class="date">2 December 2021</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/in-up-a-missing-tango-and-the-bjps-waltz/article63025309.ece">In U.P., a missing tango and the BJP&rsquo;s waltz</a>
+        <span class="date">10 November 2021</span>
+    </div>
+    <div class="article"><a href="https://www.thehindu.com/opinion/lead/decoding-the-political-battle-for-uttar-pradesh/article35289271.ece">Decoding the political battle for Uttar Pradesh</a>
+        <span class="date">13 July 2021</span>
+    </div>
+</div>
+
+</body>
 </html>
 ```
