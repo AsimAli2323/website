@@ -2,282 +2,368 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Asim Ali — Times of India Archive</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Asim Ali — Times of India</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Body & Layout */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.7;
+            color: #3a3a3a;
+            background-color: #FBF9F5;
+            font-size: 16px;
+        }
 
-<style>
-body{
-font-family: Georgia, serif;
-max-width: 820px;
-margin: 60px auto;
-line-height: 1.7;
-color:#111;
-}
+        /* Header Styling - Centered Layout */
+        .site-header {
+            text-align: center;
+            padding: 40px 20px 30px 20px;
+            border-bottom: 1px solid #e6e6e6;
+            margin-bottom: 40px;
+            background-color: #FFFFFF;
+        }
 
-h1{
-font-size:42px;
-margin-bottom:5px;
-}
+        .site-title {
+            margin: 0 0 15px 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
 
-.nav{
-margin-bottom:40px;
-}
+        .site-title a {
+            text-decoration: none;
+            color: #3a3a3a;
+        }
 
-.nav a{
-margin-right:22px;
-text-decoration:none;
-color:#111;
-font-size:15px;
-}
+        .site-tagline {
+            font-size: 14px;
+            color: #666;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: 400;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-h2{
-border-bottom:1px solid #ddd;
-padding-bottom:10px;
-margin-bottom:30px;
-}
+        /* Navigation Styling */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
 
-/* Added Year Styling to match other pages */
-.year {
-font-size: 24px;
-margin-top: 45px;
-margin-bottom: 18px;
-color: #444;
-}
+        .nav-links li {
+            margin: 0;
+        }
 
-.article{
-margin-bottom:28px;
-}
+        .nav-links a {
+            text-decoration: none;
+            color: #c6a58b;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
 
-.title{
-font-size:20px;
-font-weight:600;
-}
+        .nav-links a:hover {
+            color: #3a3a3a;
+        }
 
-.date{
-color:#888;
-font-size:14px;
-}
+        /* Content Sections */
+        .archive {
+            padding: 0 20px;
+        }
 
-a{
-color:black;
-text-decoration:none;
-}
+        /* Main Page Title */
+        .archive h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #3a3a3a;
+            border-bottom: 2px solid #c6a58b;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 25px;
+        }
 
-a:hover{
-text-decoration:underline;
-}
-</style>
+        /* Year Headers */
+        .year {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 45px;
+            margin-bottom: 18px;
+            color: #3a3a3a;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 8px;
+        }
+
+        /* Article List Styling */
+        .article {
+            margin-bottom: 16px;
+            line-height: 1.5;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .article:last-child {
+            border-bottom: none;
+        }
+
+        .article a {
+            text-decoration: none;
+            color: #3a3a3a;
+            font-weight: 500;
+            font-size: 17px;
+        }
+
+        .article a:hover {
+            color: #c6a58b;
+        }
+
+        .date {
+            color: #888;
+            font-size: 13px;
+            margin-top: 4px;
+            display: block;
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 600px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .site-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>Asim Ali</h1>
+<header class="site-header">
+    <div class="site-title"><a href="index.html">Asim Ali</a></div>
+    <p class="site-tagline">Political researcher and columnist writing on democracy, nationalism, political economy and popular culture in South Asia.</p>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Selected.html">Selected Essays</a></li>
+            <li><a href="Telegraph.html">Telegraph</a></li>
+            <li><a href="hindu.html">The Hindu</a></li>
+            <li><a href="toi.html">Times of India</a></li>
+            <li><a href="#academic">Academic Work</a></li>
+        </ul>
+    </nav>
+</header>
 
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="selected.html">Selected Essays</a>
-<a href="telegraph.html">Telegraph</a>
-<a href="hindu.html">The Hindu</a>
-<a href="toi.html">Times of India</a>
-<a href="academic.html">Academic Work</a>
-<a href="bio.html">Bio & Contact</a>
-</div>
+<div class="archive">
+    <h2>The Times of India</h2>
 
-<h2>The Times of India — Complete Archive</h2>
+    <!-- 2026 -->
+    <div class="year">2026</div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/congress-gotta-beat-bjp-to-even-be-king-of-opposition/">Congress gotta beat BJP to even be king of opposition</a>
+        <span class="date">23 March 2026</span>
+    </div>
 
-<!-- 2026 -->
-<div class="year">2026</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/congress-gotta-beat-bjp-to-even-be-king-of-opposition/">Congress gotta beat BJP to even be king of opposition</a>
-<div class="date">23 March 2026</div>
-</div>
+    <!-- 2025 -->
+    <div class="year">2025</div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/3-reasons-opposition-keeps-losing-polls/">3 reasons opposition keeps losing polls</a>
+        <span class="date">15 November 2025</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/lalus-shadow-on-bihars-vote/">Lalu’s shadow on Bihar’s vote</a>
+        <span class="date">10 October 2025</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/as-kejriwals-delhi-model-loses-aapeal-two-key-questions-for-national-politics/">As Kejriwal’s ‘Delhi model’ loses AAPeal</a>
+        <span class="date">8 February 2025</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/can-raga-be-in-tune/">Can RaGa be in tune?</a>
+        <span class="date">5 February 2025</span>
+    </div>
 
-<!-- 2025 -->
-<div class="year">2025</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/3-reasons-opposition-keeps-losing-polls/">3 reasons opposition keeps losing polls</a>
-<div class="date">15 November 2025</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/lalus-shadow-on-bihars-vote/">Lalu’s shadow on Bihar’s vote</a>
-<div class="date">10 October 2025</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/as-kejriwals-delhi-model-loses-aapeal-two-key-questions-for-national-politics/">As Kejriwal’s ‘Delhi model’ loses AAPeal</a>
-<div class="date">8 February 2025</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/can-raga-be-in-tune/">Can RaGa be in tune?</a>
-<div class="date">5 February 2025</div>
-</div>
+    <!-- 2024 -->
+    <div class="year">2024</div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/cong-get-new-ideas-new-ideators/">Cong, get new ideas & new ideators</a>
+        <span class="date">26 November 2024</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/wayanad-the-easier-of-priyanka-gandhis-tests/">Wayanad: The easier of Priyanka Gandhi’s tests</a>
+        <span class="date">29 October 2024</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/what-rahul-isnt-saying/">What Rahul isn’t saying</a>
+        <span class="date">13 September 2024</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/not-to-do-list-for-rahul-priyanka/">Not-to-do list for Rahul, Priyanka</a>
+        <span class="date">19 June 2024</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/why-congress-is-back-but-isnt-quite-there-yet/">Why Congress is back but isn’t quite there yet</a>
+        <span class="date">5 June 2024</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/its-v-for-variety/">It’s V for variety</a>
+        <span class="date">7 May 2024</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/five-key-factors-2024s-winning-strategy-must-optimise/">Five key factors 2024’s winning strategy must optimise</a>
+        <span class="date">18 March 2024</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/farmers-stirred-bjp-not-shaken/">Farmers stirred, BJP not shaken</a>
+        <span class="date">17 February 2024</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/patnas-paltu-politics-4-ways-game-changes/">Patna’s paltu politics</a>
+        <span class="date">29 January 2024</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/voter-not-narwekar-is-kingmaker/">Voter, not Narwekar, is kingmaker</a>
+        <span class="date">11 January 2024</span>
+    </div>
 
-<!-- 2024 -->
-<div class="year">2024</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/cong-get-new-ideas-new-ideators/">Cong, get new ideas & new ideators</a>
-<div class="date">26 November 2024</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/wayanad-the-easier-of-priyanka-gandhis-tests/">Wayanad: The easier of Priyanka Gandhi’s tests</a>
-<div class="date">29 October 2024</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/what-rahul-isnt-saying/">What Rahul isn’t saying</a>
-<div class="date">13 September 2024</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/not-to-do-list-for-rahul-priyanka/">Not-to-do list for Rahul, Priyanka</a>
-<div class="date">19 June 2024</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/why-congress-is-back-but-isnt-quite-there-yet/">Why Congress is back but isn’t quite there yet</a>
-<div class="date">5 June 2024</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/its-v-for-variety/">It’s V for variety</a>
-<div class="date">7 May 2024</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/five-key-factors-2024s-winning-strategy-must-optimise/">Five key factors 2024’s winning strategy must optimise</a>
-<div class="date">18 March 2024</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/farmers-stirred-bjp-not-shaken/">Farmers stirred, BJP not shaken</a>
-<div class="date">17 February 2024</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/patnas-paltu-politics-4-ways-game-changes/">Patna’s paltu politics</a>
-<div class="date">29 January 2024</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/voter-not-narwekar-is-kingmaker/">Voter, not Narwekar, is kingmaker</a>
-<div class="date">11 January 2024</div>
-</div>
+    <!-- 2023 -->
+    <div class="year">2023</div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/many-faces-no-big-idea/">Many faces, no big idea</a>
+        <span class="date">20 December 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/in-8-points-how-bjp-brahmastra-destroyed-congress/">In 8 points: How BJP ‘Brahmastra’ destroyed Congress</a>
+        <span class="date">4 December 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/jaipurs-hawa-going-both-ways/">Jaipur’s hawa going both ways</a>
+        <span class="date">26 October 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/the-telangana-topsy-turvy/">The Telangana topsy-turvy</a>
+        <span class="date">12 October 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/the-madhya-matrix-mp-polls-are-a-very-tight-race-incumbency-hurts-bjp-but-the-modi-factor-helps-it-congresss-dalit-tribal-game-seems-to-be-working-its-wooing-obcs-but-don/">The Madhya Matrix</a>
+        <span class="date">27 September 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/can-india-solve-the-bjp-puzzle/">Can INDIA solve the BJP puzzle?</a>
+        <span class="date">1 September 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/hes-back-so-is-the-dilemma/">He’s back, so is the dilemma</a>
+        <span class="date">7 August 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/whats-gehlot-getting-at-battling-anti-incumbency-rajasthans-wily-cm-is-trying-to-create-a-personal-brand-tapping-into-latent-sub-national-sentiment-helming-populist-welfare-sche/">What’s Gehlot getting at?</a>
+        <span class="date">27 July 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/its-the-story-not-the-sharing/">It’s the story, not the sharing</a>
+        <span class="date">27 July 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/happy-ending-for-pawar-play-ncp-patriarch-wants-to-hem-in-his-nephew-takes-a-risk-promoting-his-daughter-and-wants-to-fight-both-bjp-new-outfits-representing-subaltern-groups/">Happy ending for Pawar play?</a>
+        <span class="date">12 July 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/that-age-old-question/">That age-old question</a>
+        <span class="date">7 July 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/congs-local-hand-is-its-strongest/">Cong’s local hand is its strongest</a>
+        <span class="date">15 May 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/out-of-house-what-should-rahul-do-if-gandhi-has-to-electorally-leverage-his-bigger-profile-post-disqualification-he-has-to-harness-his-ideological-rhetoric-to-a-variety-of-local-political-narrativ/">Out of House, what should Rahul do?</a>
+        <span class="date">26 March 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/caught-between-math-modi-2024-isnt-2004-even-if-congress-builds-a-large-opposition-alliance-there-are-three-reasons-defeating-bjp-nationally-will-be-very-tough/">Caught between math & Modi</a>
+        <span class="date">27 February 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/congress-has-a-long-walk-ahead-bharat-jodo-yatra-strengthens-rahuls-leadership-but-sonias-alliance-building-skills-are-being-missed/">Congress has a long walk ahead</a>
+        <span class="date">30 January 2023</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/karnatakas-3-in-1-polls-bjp-congress-jds-all-face-the-same-dilemma-cosset-their-caste-base-or-woo-new-social-groups/">Karnataka’s 3-in-1 polls</a>
+        <span class="date">15 January 2023</span>
+    </div>
 
-<!-- 2023 -->
-<div class="year">2023</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/many-faces-no-big-idea/">Many faces, no big idea</a>
-<div class="date">20 December 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/in-8-points-how-bjp-brahmastra-destroyed-congress/">In 8 points: How BJP ‘Brahmastra’ destroyed Congress</a>
-<div class="date">4 December 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/jaipurs-hawa-going-both-ways/">Jaipur’s hawa going both ways</a>
-<div class="date">26 October 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/the-telangana-topsy-turvy/">The Telangana topsy-turvy</a>
-<div class="date">12 October 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/the-madhya-matrix-mp-polls-are-a-very-tight-race-incumbency-hurts-bjp-but-the-modi-factor-helps-it-congresss-dalit-tribal-game-seems-to-be-working-its-wooing-obcs-but-don/">The Madhya Matrix</a>
-<div class="date">27 September 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/can-india-solve-the-bjp-puzzle/">Can INDIA solve the BJP puzzle?</a>
-<div class="date">1 September 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/hes-back-so-is-the-dilemma/">He’s back, so is the dilemma</a>
-<div class="date">7 August 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/whats-gehlot-getting-at-battling-anti-incumbency-rajasthans-wily-cm-is-trying-to-create-a-personal-brand-tapping-into-latent-sub-national-sentiment-helming-populist-welfare-sche/">What’s Gehlot getting at?</a>
-<div class="date">27 July 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/its-the-story-not-the-sharing/">It’s the story, not the sharing</a>
-<div class="date">27 July 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/happy-ending-for-pawar-play-ncp-patriarch-wants-to-hem-in-his-nephew-takes-a-risk-promoting-his-daughter-and-wants-to-fight-both-bjp-new-outfits-representing-subaltern-groups/">Happy ending for Pawar play?</a>
-<div class="date">12 July 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/that-age-old-question/">That age-old question</a>
-<div class="date">7 July 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/congs-local-hand-is-its-strongest/">Cong’s local hand is its strongest</a>
-<div class="date">15 May 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/out-of-house-what-should-rahul-do-if-gandhi-has-to-electorally-leverage-his-bigger-profile-post-disqualification-he-has-to-harness-his-ideological-rhetoric-to-a-variety-of-local-political-narrativ/">Out of House, what should Rahul do?</a>
-<div class="date">26 March 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/caught-between-math-modi-2024-isnt-2004-even-if-congress-builds-a-large-opposition-alliance-there-are-three-reasons-defeating-bjp-nationally-will-be-very-tough/">Caught between math & Modi</a>
-<div class="date">27 February 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/congress-has-a-long-walk-ahead-bharat-jodo-yatra-strengthens-rahuls-leadership-but-sonias-alliance-building-skills-are-being-missed/">Congress has a long walk ahead</a>
-<div class="date">30 January 2023</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/karnatakas-3-in-1-polls-bjp-congress-jds-all-face-the-same-dilemma-cosset-their-caste-base-or-woo-new-social-groups/">Karnataka’s 3-in-1 polls</a>
-<div class="date">15 January 2023</div>
-</div>
+    <!-- 2022 -->
+    <div class="year">2022</div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/the-modi-marvel-the-congsolation-one-question-for-bjp-many-questions-for-congress/">The Modi marvel & the Congsolation</a>
+        <span class="date">9 December 2022</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/aaps-bitter-revdi-by-championing-freebies-kejriwal-may-have-eased-bjps-path-to-a-comfortable-win-in-gujarat/">AAP’s bitter revdi?</a>
+        <span class="date">8 November 2022</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/old-new-chief-same-old-party-kharge-being-elected-president-means-congresss-frigid-bureaucracy-will-last-at-least-till-2024/">Old new chief, same old party</a>
+        <span class="date">19 October 2022</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/star-castes-in-telangana-states-political-battle-is-pitching-resurgent-bjps-kapus-mudirajus-against-trss-reddys-velamas/">Star castes in Telangana</a>
+        <span class="date">18 September 2022</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/patna-potboiler-chapter-2-bihars-new-politics-can-play-out-in-multiple-ways-in-2024-here-are-the-key-factors-to-watch/">Patna potboiler</a>
+        <span class="date">9 August 2022</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/the-no-position-parties-opposition-doesnt-have-a-good-story-to-tell-as-seen-again-in-presidential-poll-pick-and-maha-crisis/">The no-position parties</a>
+        <span class="date">21 July 2022</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/bjps-hands-off-grievance-politics-is-gyanvapi-about-a-current-political-project-or-about-correcting-wrongs-of-mainstream-history-can-courts-help/">BJP’s hands-off grievance politics</a>
+        <span class="date">17 May 2022</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/congresss-bloated-middle-plans-like-kishors-will-fail-because-weak-gandhis-entrenched-party-managers-are-in-mutual-dependence/">Congress’s bloated middle</a>
+        <span class="date">28 April 2022</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/it-was-as-much-ram-as-it-was-ration-hindu-emotion-vote-is-key-in-bjps-big-up-win/">It was as much Ram as it was ration</a>
+        <span class="date">10 March 2022</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/will-east-decide-up-winner-last-two-phases-key-because-indications-are-bjp-sp-may-both-need-purvanchal/">Will east decide UP winner?</a>
+        <span class="date">2 March 2022</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/awadh-to-lucknow-to-ayodhya-179-seats-in-up-polls-phases-3-4-5-will-test-sps-ability-to-win-back-yadav-areas-like-mainpuri-etah-kannauj-bjps-hold-on-bundelkhand/">Awadh to Lucknow to Ayodhya</a>
+        <span class="date">18 February 2022</span>
+    </div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/how-the-west-will-be-won-up-polls-begin-today-with-the-western-region-key-things-to-watch-jat-muslim-support-for-sp-non-yadav-obc-non-jatav-dalit-support-for-bjp-floating-voters-like-guj/">How the west will be won</a>
+        <span class="date">9 February 2022</span>
+    </div>
 
-<!-- 2022 -->
-<div class="year">2022</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/the-modi-marvel-the-congsolation-one-question-for-bjp-many-questions-for-congress/">The Modi marvel & the Congsolation</a>
-<div class="date">9 December 2022</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/aaps-bitter-revdi-by-championing-freebies-kejriwal-may-have-eased-bjps-path-to-a-comfortable-win-in-gujarat/">AAP’s bitter revdi?</a>
-<div class="date">8 November 2022</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/old-new-chief-same-old-party-kharge-being-elected-president-means-congresss-frigid-bureaucracy-will-last-at-least-till-2024/">Old new chief, same old party</a>
-<div class="date">19 October 2022</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/star-castes-in-telangana-states-political-battle-is-pitching-resurgent-bjps-kapus-mudirajus-against-trss-reddys-velamas/">Star castes in Telangana</a>
-<div class="date">18 September 2022</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/patna-potboiler-chapter-2-bihars-new-politics-can-play-out-in-multiple-ways-in-2024-here-are-the-key-factors-to-watch/">Patna potboiler</a>
-<div class="date">9 August 2022</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/the-no-position-parties-opposition-doesnt-have-a-good-story-to-tell-as-seen-again-in-presidential-poll-pick-and-maha-crisis/">The no-position parties</a>
-<div class="date">21 July 2022</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/bjps-hands-off-grievance-politics-is-gyanvapi-about-a-current-political-project-or-about-correcting-wrongs-of-mainstream-history-can-courts-help/">BJP’s hands-off grievance politics</a>
-<div class="date">17 May 2022</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/congresss-bloated-middle-plans-like-kishors-will-fail-because-weak-gandhis-entrenched-party-managers-are-in-mutual-dependence/">Congress’s bloated middle</a>
-<div class="date">28 April 2022</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/it-was-as-much-ram-as-it-was-ration-hindu-emotion-vote-is-key-in-bjps-big-up-win/">It was as much Ram as it was ration</a>
-<div class="date">10 March 2022</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/will-east-decide-up-winner-last-two-phases-key-because-indications-are-bjp-sp-may-both-need-purvanchal/">Will east decide UP winner?</a>
-<div class="date">2 March 2022</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/awadh-to-lucknow-to-ayodhya-179-seats-in-up-polls-phases-3-4-5-will-test-sps-ability-to-win-back-yadav-areas-like-mainpuri-etah-kannauj-bjps-hold-on-bundelkhand/">Awadh to Lucknow to Ayodhya</a>
-<div class="date">18 February 2022</div>
-</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/how-the-west-will-be-won-up-polls-begin-today-with-the-western-region-key-things-to-watch-jat-muslim-support-for-sp-non-yadav-obc-non-jatav-dalit-support-for-bjp-floating-voters-like-guj/">How the west will be won</a>
-<div class="date">9 February 2022</div>
-</div>
+    <!-- 2021 -->
+    <div class="year">2021</div>
+    <div class="article">
+        <a href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/the-big-national-takeaway-mamata-banerjees-overwhelming-victory-provides-a-model-for-bjps-political-opponents/">Mamata Banerjee’s victory provides a model</a>
+        <span class="date">2 May 2021</span>
+    </div>
 
-<!-- 2021 -->
-<div class="year">2021</div>
-<div class="article">
-<a class="title" href="https://timesofindia.indiatimes.com/blogs/toi-edit-page/the-big-national-takeaway-mamata-banerjees-overwhelming-victory-provides-a-model-for-bjps-political-opponents/">Mamata Banerjee’s victory provides a model</a>
-<div class="date">2 May 2021</div>
 </div>
 
 </body>
