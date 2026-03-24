@@ -1,169 +1,257 @@
+Here is the updated code for `selected.html`. I have applied the exact same Montserrat typography, gold/charcoal color scheme, and centered header layout to ensure it is perfectly consistent with the Index, The Hindu, and TOI pages.
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Asim Ali — Selected Essays</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Asim Ali — Selected Essays</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Body & Layout */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.7;
+            color: #3a3a3a;
+            background-color: #FBF9F5;
+            font-size: 16px;
+        }
 
-<style>
-body{
-font-family: Georgia, serif;
-max-width: 820px;
-margin: 60px auto;
-line-height: 1.7;
-color:#111;
-}
+        /* Header Styling - Centered Layout */
+        .site-header {
+            text-align: center;
+            padding: 40px 20px 30px 20px;
+            border-bottom: 1px solid #e6e6e6;
+            margin-bottom: 40px;
+            background-color: #FFFFFF;
+        }
 
-h1{
-font-size:42px;
-margin-bottom:10px;
-}
+        .site-title {
+            margin: 0 0 15px 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
 
-.nav{
-margin-bottom:40px;
-}
+        .site-title a {
+            text-decoration: none;
+            color: #3a3a3a;
+        }
 
-.nav a{
-margin-right:22px;
-text-decoration:none;
-color:#111;
-font-size:15px;
-}
+        .site-tagline {
+            font-size: 14px;
+            color: #666;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: 400;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-h2{
-border-bottom:1px solid #ddd;
-padding-bottom:10px;
-margin-bottom:30px;
-}
+        /* Navigation Styling */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
 
-.article{
-margin-bottom:30px;
-}
+        .nav-links li {
+            margin: 0;
+        }
 
-.pub{
-color:#555;
-font-size: 13px;
-font-weight: bold;
-text-transform: uppercase;
-margin-bottom: 4px;
-}
+        .nav-links a {
+            text-decoration: none;
+            color: #c6a58b;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
 
-.title{
-font-size:20px;
-font-weight:600;
-display: block;
-margin-bottom: 2px;
-}
+        .nav-links a:hover {
+            color: #3a3a3a;
+        }
 
-.date{
-color:#888;
-font-size:14px;
-}
+        /* Content Sections */
+        .archive {
+            padding: 0 20px;
+        }
 
-a{
-color:black;
-text-decoration:none;
-}
+        /* Main Page Title */
+        .archive h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #3a3a3a;
+            border-bottom: 2px solid #c6a58b;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 25px;
+        }
 
-a:hover{
-text-decoration:underline;
-}
-</style>
+        /* Article List Styling */
+        .article {
+            margin-bottom: 16px;
+            line-height: 1.5;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .article:last-child {
+            border-bottom: none;
+        }
+
+        /* Publication Name */
+        .pub {
+            color: #c6a58b; /* Accent color */
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Article Title Link */
+        .article a.title {
+            text-decoration: none;
+            color: #3a3a3a;
+            font-weight: 500;
+            font-size: 17px;
+            display: inline-block;
+            margin-bottom: 2px;
+        }
+
+        .article a.title:hover {
+            color: #c6a58b;
+        }
+
+        .date {
+            color: #888;
+            font-size: 13px;
+            display: block;
+            margin-top: 4px;
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 600px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .site-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>Asim Ali</h1>
+<header class="site-header">
+    <div class="site-title"><a href="index.html">Asim Ali</a></div>
+    <p class="site-tagline">Political researcher and columnist writing on democracy, nationalism, political economy and popular culture in South Asia.</p>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Selected.html">Selected Essays</a></li>
+            <li><a href="Telegraph.html">Telegraph</a></li>
+            <li><a href="hindu.html">The Hindu</a></li>
+            <li><a href="toi.html">Times of India</a></li>
+            <li><a href="#academic">Academic Work</a></li>
+        </ul>
+    </nav>
+</header>
 
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="selected.html">Selected Essays</a>
-<a href="telegraph.html">Telegraph</a>
-<a href="hindu.html">The Hindu</a>
-<a href="toi.html">Times of India</a>
-<a href="academic.html">Academic Work</a>
-<a href="bio.html">Bio & Contact</a>
-</div>
+<div class="archive">
+    <h2>Selected Essays</h2>
 
-<h2>Selected Essays</h2>
+    <div class="article">
+        <div class="pub">The Diplomat</div>
+        <a class="title" href="https://thediplomat.com/2025/05/democracy-disfigured-indias-political-devolution/">Democracy Disfigured: India’s Political Devolution</a>
+        <div class="date">1 June 2025</div>
+    </div>
 
-<div class="article">
-<div class="pub">The Diplomat</div>
-<a class="title" href="https://thediplomat.com/2025/05/democracy-disfigured-indias-political-devolution/">Democracy Disfigured: India’s Political Devolution</a>
-<div class="date">1 June 2025</div>
-</div>
+    <div class="article">
+        <div class="pub">Frontline</div>
+        <a class="title" href="https://frontline.thehindu.com/politics/rss-hindu-nationalism-muslim-outreach-assimilation-myth/article70041752.ece">No Muslim, no Hindutva</a>
+        <div class="date">24 September 2025</div>
+    </div>
 
-<div class="article">
-<div class="pub">Frontline</div>
-<a class="title" href="https://frontline.thehindu.com/politics/rss-hindu-nationalism-muslim-outreach-assimilation-myth/article70041752.ece">No Muslim, no Hindutva</a>
-<div class="date">24 September 2025</div>
-</div>
+    <div class="article">
+        <div class="pub">Frontline</div>
+        <a class="title" href="https://frontline.thehindu.com/politics/why-aap-lost-delhi-political-failure/article69219062.ece">AAP’s fall in Delhi: A failure of political imagination</a>
+        <div class="date">14 February 2025</div>
+    </div>
 
-<div class="article">
-<div class="pub">Frontline</div>
-<a class="title" href="https://frontline.thehindu.com/politics/why-aap-lost-delhi-political-failure/article69219062.ece">AAP’s fall in Delhi: A failure of political imagination</a>
-<div class="date">14 February 2025</div>
-</div>
+    <div class="article">
+        <div class="pub">Frontline</div>
+        <a class="title" href="https://frontline.thehindu.com/politics/the-opposition-must-adopt-a-subaltern-strategy-to-defeat-the-nda-hegemony/article67949690.ece">Power to the people: India’s democracy needs a subaltern revival</a>
+        <div class="date">21 March 2024</div>
+    </div>
 
-<div class="article">
-<div class="pub">Frontline</div>
-<a class="title" href="https://frontline.thehindu.com/politics/the-opposition-must-adopt-a-subaltern-strategy-to-defeat-the-nda-hegemony/article67949690.ece">Power to the people: India’s democracy needs a subaltern revival</a>
-<div class="date">21 March 2024</div>
-</div>
+    <div class="article">
+        <div class="pub">The Guardian</div>
+        <a class="title" href="https://www.theguardian.com/commentisfree/2023/jun/01/bollywood-hit-kerala-story-islamophobic-bjp">Ignore lofty claims about The Kerala Story</a>
+        <div class="date">1 June 2023</div>
+    </div>
 
-<div class="article">
-<div class="pub">The Guardian</div>
-<a class="title" href="https://www.theguardian.com/commentisfree/2023/jun/01/bollywood-hit-kerala-story-islamophobic-bjp">Ignore lofty claims about The Kerala Story</a>
-<div class="date">1 June 2023</div>
-</div>
+    <div class="article">
+        <div class="pub">Newslaundry</div>
+        <a class="title" href="https://www.newslaundry.com/2023/01/29/why-its-silly-to-forcefit-love-vs-hate-narrative-on-pathaan">Why it’s silly to forcefit ‘love-vs-hate’ narrative on Pathaan</a>
+        <div class="date">29 January 2023</div>
+    </div>
 
-<div class="article">
-<div class="pub">Newslaundry</div>
-<a class="title" href="https://www.newslaundry.com/2023/01/29/why-its-silly-to-forcefit-love-vs-hate-narrative-on-pathaan">Why it’s silly to forcefit ‘love-vs-hate’ narrative on Pathaan</a>
-<div class="date">29 January 2023</div>
-</div>
+    <div class="article">
+        <div class="pub">Newslaundry</div>
+        <a class="title" href="https://www.newslaundry.com/2022/03/15/dont-trust-muslims-leftists-or-secularists-why-the-kashmir-files-is-no-schindlers-list">Don’t trust Muslims, leftists or secularists</a>
+        <div class="date">15 March 2022</div>
+    </div>
 
-<div class="article">
-<div class="pub">Newslaundry</div>
-<a class="title" href="https://www.newslaundry.com/2022/03/15/dont-trust-muslims-leftists-or-secularists-why-the-kashmir-files-is-no-schindlers-list">Don’t trust Muslims, leftists or secularists</a>
-<div class="date">15 March 2022</div>
-</div>
+    <div class="article">
+        <div class="pub">The Diplomat</div>
+        <a class="title" href="https://thediplomat.com/2021/03/the-making-of-brand-modi/">The Making of Brand Modi</a>
+        <div class="date">1 April 2021</div>
+    </div>
 
-<div class="article">
-<div class="pub">The Diplomat</div>
-<a class="title" href="https://thediplomat.com/2021/03/the-making-of-brand-modi/">The Making of Brand Modi</a>
-<div class="date">1 April 2021</div>
-</div>
+    <div class="article">
+        <div class="pub">The New York Times</div>
+        <a class="title" href="https://www.nytimes.com/2020/02/12/opinion/delhi-election-modi.html">Modi Lost in Delhi. It Doesn’t Matter.</a>
+        <div class="date">12 February 2020</div>
+    </div>
 
-<div class="article">
-<div class="pub">The New York Times</div>
-<a class="title" href="https://www.nytimes.com/2020/02/12/opinion/delhi-election-modi.html">Modi Lost in Delhi. It Doesn’t Matter.</a>
-<div class="date">12 February 2020</div>
-</div>
+    <div class="article">
+        <div class="pub">The Telegraph</div>
+        <a class="title" href="https://www.telegraphindia.com/opinion/specific-syndrome-the-crisis-in-south-asian-democracy-is-structural/cid/2041464">Specific syndrome: The crisis in South Asian democracy is structural</a>
+        <div class="date">17 August 2024</div>
+    </div>
 
-<div class="article">
-<div class="pub">The Telegraph</div>
-<a class="title" href="https://www.telegraphindia.com/opinion/specific-syndrome-the-crisis-in-south-asian-democracy-is-structural/cid/2041464">Specific syndrome: The crisis in South Asian democracy is structural</a>
-<div class="date">17 August 2024</div>
-</div>
+    <div class="article">
+        <div class="pub">The Telegraph</div>
+        <a class="title" href="https://www.telegraphindia.com/opinion/a-familiar-template-bihars-politics-resembles-a-managed-form-of-democracy-prnt/cid/2129441">A familiar template</a>
+        <div class="date">25 October 2025</div>
+    </div>
 
-<div class="article">
-<div class="pub">The Telegraph</div>
-<a class="title" href="https://www.telegraphindia.com/opinion/a-familiar-template-bihars-politics-resembles-a-managed-form-of-democracy-prnt/cid/2129441">A familiar template</a>
-<div class="date">25 October 2025</div>
-</div>
+    <div class="article">
+        <div class="pub">The Telegraph</div>
+        <a class="title" href="https://www.telegraphindia.com/opinion/a-different-ball-game-football-as-soft-power-in-the-middle-east/cid/1900313">A different ball game</a>
+        <div class="date">26 November 2022</div>
+    </div>
 
-<div class="article">
-<div class="pub">The Telegraph</div>
-<a class="title" href="https://www.telegraphindia.com/opinion/a-different-ball-game-football-as-soft-power-in-the-middle-east/cid/1900313">A different ball game</a>
-<div class="date">26 November 2022</div>
-</div>
+    <div class="article">
+        <div class="pub">The Telegraph</div>
+        <a class="title" href="https://www.telegraphindia.com/opinion/imprisoned-minds-the-failure-of-indian-schools-to-promote-liberalism/cid/1894844">Imprisoned minds</a>
+        <div class="date">29 October 2022</div>
+    </div>
 
-<div class="article">
-<div class="pub">The Telegraph</div>
-<a class="title" href="https://www.telegraphindia.com/opinion/imprisoned-minds-the-failure-of-indian-schools-to-promote-liberalism/cid/1894844">Imprisoned minds</a>
-<div class="date">29 October 2022</div>
 </div>
 
 </body>
